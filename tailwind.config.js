@@ -9,6 +9,9 @@ module.exports = {
         praise: 'Praise',
         'm-plus': "'M+PLUS+1'",
       },
+      fontSize: {
+        '10xl': '10rem',
+      },
     },
   },
   variants: {
