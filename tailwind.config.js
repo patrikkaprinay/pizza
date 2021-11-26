@@ -4,6 +4,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      screens: {
+        xs: '373px',
+      },
       fontFamily: {
         comforter: 'Comforter',
         praise: 'Praise',

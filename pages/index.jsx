@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Contact from '../components/Contact'
+import Info from '../components/Info'
 import Menu from '../components/Menu'
 
 export default function Home() {
@@ -28,6 +30,8 @@ export default function Home() {
         </div>
       </main>
       <Menu />
+      <Contact />
+      <Info />
     </div>
   )
 }
