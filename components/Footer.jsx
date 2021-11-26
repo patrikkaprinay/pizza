@@ -10,15 +10,40 @@ const Footer = () => {
           </div>
           <div className="flex justify-center items-center flex-col py-4 md:py-8">
             <div className="flex flex-col items-center sm:items-start">
-              <a href="#">Úvod</a>
-              <a href="#menu">Menu</a>
-              <a href="#kontakt">Kontakt</a>
-              <a href="#hodiny">Otváracie Hodiny</a>
-              <a href="#cennik">Cenník</a>
+              <a
+                className="hover:text-gray-500 transition duration-200"
+                href="#"
+              >
+                Úvod
+              </a>
+              <a
+                className="hover:text-gray-500 transition duration-200"
+                href="#menu"
+              >
+                Menu
+              </a>
+              <a
+                className="hover:text-gray-500 transition duration-200"
+                href="#kontakt"
+              >
+                Kontakt
+              </a>
+              <a
+                className="hover:text-gray-500 transition duration-200"
+                href="#hodiny"
+              >
+                Otváracie Hodiny
+              </a>
+              <a
+                className="hover:text-gray-500 transition duration-200"
+                href="#cennik"
+              >
+                Cenník
+              </a>
             </div>
           </div>
         </div>
-        <p className="text-center text-gray-400">&copy; kpty</p>
+        <p className="text-center text-gray-400 pb-2">&copy; kpty</p>
       </div>
     </div>
   )

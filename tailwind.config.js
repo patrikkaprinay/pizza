@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        xs: '373px',
+        xs: '450px',
       },
       fontFamily: {
         comforter: 'Comforter',

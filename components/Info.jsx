@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-const Hours = () => {
+const Info = () => {
   const open = [
     {
       id: 1,
@@ -110,7 +110,7 @@ const Hours = () => {
           <h3 className="text-3xl">Otváracie Hodiny</h3>
           <div className="w-full mt-4">
             {open.map((day) => (
-              <div className="grid grid-cols-4 w-2/3 mx-auto">
+              <div className="grid grid-cols-4 w-2/3 mx-auto" key={day.id}>
                 <div className="col-span-2 font-semibold">{day.name}:</div>
                 <div className="col-span-2 text-right">
                   {day.from} - {day.until}
@@ -130,7 +130,7 @@ const Hours = () => {
           <h3 className="text-3xl">Cenník</h3>
           <div className="w-full mt-4">
             {cennik.map((village) => (
-              <div className="grid grid-cols-4 w-2/3 mx-auto">
+              <div className="grid grid-cols-4 w-2/3 mx-auto" key={village.id}>
                 <div className="col-span-2 font-semibold">{village.name}:</div>
                 <div className="col-span-2 text-right">{village.price}€</div>
               </div>
@@ -138,7 +138,9 @@ const Hours = () => {
           </div>
           <div className="mt-3 text-gray-400">
             {extra.map((extra) => (
-              <p className="text-center lg:text-left">{extra.name}.</p>
+              <p className="text-center lg:text-left" key={extra.id}>
+                {extra.name}.
+              </p>
             ))}
           </div>
         </div>
@@ -147,4 +149,4 @@ const Hours = () => {
   )
 }
 
-export default Hours
+export default Info
