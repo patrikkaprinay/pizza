@@ -6,7 +6,7 @@ import Menu from '../components/Menu'
 export default function Home() {
   return (
     <div>
-      <main className="pt-44">
+      <main className="py-44">
         <div className="container mx-auto">
           <Head>
             <title>Pizza Milano</title>

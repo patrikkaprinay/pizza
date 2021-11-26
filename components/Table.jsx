@@ -1,76 +1,4 @@
-const Table = () => {
-  const data = [
-    {
-      id: 1,
-      name: 'Margerita',
-      description: 'rajčinový pretlak, syr',
-      big: '4,50€',
-      small: '5,10€',
-    },
-    {
-      id: 2,
-      name: 'Hawaii',
-      description: 'rajčinový pretlak, syr, šunka, kukurica',
-      big: '4,50€',
-      small: '5,10€',
-    },
-    {
-      id: 3,
-      name: 'Gazdovska',
-      description:
-        'rajčinový pretlak, syr, šunka, slanina, kur.mäso, kukurica, niva',
-      big: '3,20€',
-      small: '4,20€',
-    },
-    {
-      id: 4,
-      name: 'Proscuto',
-      description: 'rajčinový pretlak, syr, salám, kukurica',
-      big: '3,80€',
-      small: '4,40€',
-    },
-    {
-      id: 5,
-      name: 'El Funghi',
-      description: 'rajčinový pretlak, syr, šampiňóny, olivy, kukurica	',
-      big: '3,90€',
-      small: '4,80€',
-    },
-    {
-      id: 6,
-      name: 'Salama',
-      description: 'rajčinový pretlak, syr, šunka, ananás	',
-      big: '4,20€',
-      small: '5,10€',
-    },
-    {
-      id: 7,
-      name: 'Pepperoni',
-      description: 'rajčinový pretlak, syr, kuracia mäso, cibuľa, kukurica	',
-      big: '3,90€',
-      small: '4,70€',
-    },
-  ]
-  const columns = [
-    {
-      id: 1,
-      title: 'Číslo',
-    },
-    {
-      id: 2,
-      title: 'Názov',
-      center: false,
-    },
-    {
-      id: 3,
-      title: 'Veľká 450g',
-    },
-    {
-      id: 4,
-      title: 'Malá 350g',
-    },
-  ]
-
+const Table = (props) => {
   const formatNumber = (num) => {
     if (typeof num == 'number' && num < 10) {
       return '0' + num
@@ -83,7 +11,7 @@ const Table = () => {
     <table className="min-w-full divide-y divide-gray-200">
       <thead className="bg-gray-50">
         <tr>
-          {columns.map((col) => (
+          {props.columns.map((col) => (
             <th
               key={col.id}
               scope="col"
@@ -97,7 +25,7 @@ const Table = () => {
         </tr>
       </thead>
       <tbody className="bg-white divide-y divide-gray-200">
-        {data.map((item) => (
+        {props.data.map((item) => (
           <tr key={item.id}>
             <td className="px-6, py-4 whitespace-nowrap items-center justify-center hidden xs:flex">
               <div className="">{item.id}</div>

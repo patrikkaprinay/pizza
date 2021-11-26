@@ -103,7 +103,10 @@ const Hours = () => {
   return (
     <div className="py-14">
       <div className="grid grid-cols-1 md:grid-cols-2 w-4/5 md:w-full lg:w-3/5 mx-auto h-full">
-        <div className="flex justify-center items-center flex-col my-8">
+        <div
+          className="flex justify-center items-center flex-col my-8"
+          id="hodiny"
+        >
           <h3 className="text-3xl">Otváracie Hodiny</h3>
           <div className="w-full mt-4">
             {open.map((day) => (
@@ -120,11 +123,14 @@ const Hours = () => {
             <Image src="/gastrolistky.jpg" height={55} width={195} />
           </div>
         </div>
-        <div className="flex justify-center items-center flex-col my-8">
+        <div
+          className="flex justify-center items-center flex-col my-8"
+          id="cennik"
+        >
           <h3 className="text-3xl">Cenník</h3>
           <div className="w-full mt-4">
             {cennik.map((village) => (
-              <div className="grid grid-cols-4 w-4/5 md:w-2/3 lg:w-3/5 mx-auto">
+              <div className="grid grid-cols-4 w-2/3 mx-auto">
                 <div className="col-span-2 font-semibold">{village.name}:</div>
                 <div className="col-span-2 text-right">{village.price}€</div>
               </div>
