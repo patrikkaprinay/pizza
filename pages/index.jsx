@@ -13,8 +13,8 @@ export default function Home() {
               href="https://fonts.googleapis.com/icon?family=Material+Icons"
             />
           </Head>
-          <div className="flex justify-center items-center flex-col bg-gray-300 py-8 bg-opacity-90 rounded-lg w-4/5 mx-auto">
-            <h1 className="text-center font-praise text-6xl sm:text-8xl">
+          <div className="flex justify-center items-center flex-col bg-gray-300 py-8 bg-opacity-90 rounded-lg w-4/5 md:w-3/5 mx-auto md:py-16">
+            <h1 className="text-center font-praise text-7xl sm:text-8xl">
               Pizza Milano
             </h1>
             <p className="text-xl md:text-2xl w-4/6 mx-auto text-center">

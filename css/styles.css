@@ -8,6 +8,9 @@ html {
 
 main {
   background-image: url('/pizza.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
   min-height: 90vh;
 }
 
