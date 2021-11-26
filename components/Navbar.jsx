@@ -1,25 +1,23 @@
-import Link from 'next/link'
 import { useState } from 'react'
 import { BiMenu } from 'react-icons/bi'
 import { motion, AnimatePresence } from 'framer-motion'
-import { IoMdPizza } from 'react-icons/io'
 import NavItems from './NavItems'
+import Logo from './Logo'
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [opened, setOpened] = useState(false)
 
   return (
     <div
-      className={`bg-gray-300 ${opened ? 'pt-4 pb-2' : 'py-4'} fixed w-full`}
+      className={` ${opened ? 'pt-4 pb-2' : 'py-4'} fixed w-full ${
+        props.scrolled ? 'bg-white' : 'navGradient'
+      } transition duration-500`}
     >
       <div className="container h-full sm:mx-auto flex justify-between items-center px-4">
         <div className="col-span-4 md:col-span-2 flex items-center text-3xl">
-          <p className="w-full font-praise">
-            <a href="#" className="flex flex-row">
-              <IoMdPizza style={{ width: 27 }} />
-              Pizza Milano
-            </a>
-          </p>
+          <a href="#" className="flex flex-row">
+            <Logo start={true} />
+          </a>
         </div>
         <div className="md:col-span-3 md:flex justify-center items-center flex-row gap-8 hidden">
           <NavItems />

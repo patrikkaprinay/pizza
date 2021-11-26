@@ -53,27 +53,32 @@ const Table = () => {
   ]
   const columns = [
     {
+      id: 1,
       title: 'Číslo',
     },
     {
+      id: 2,
       title: 'Názov',
       center: false,
     },
     {
+      id: 3,
       title: 'Veľká 450g',
     },
     {
+      id: 4,
       title: 'Malá 350g',
     },
   ]
   return (
-    <table class="min-w-full divide-y divide-gray-200">
-      <thead class="bg-gray-50">
+    <table className="min-w-full divide-y divide-gray-200">
+      <thead className="bg-gray-50">
         <tr>
           {columns.map((col) => (
             <th
+              key={col.id}
               scope="col"
-              class={`px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider ${
+              className={`px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider ${
                 col.center == false ? 'text-left' : 'text-center'
               }`}
             >
@@ -82,26 +87,28 @@ const Table = () => {
           ))}
         </tr>
       </thead>
-      <tbody class="bg-white divide-y divide-gray-200">
+      <tbody className="bg-white divide-y divide-gray-200">
         {data.map((item) => (
-          <tr>
+          <tr key={item.id}>
             <td className="px-6, py-4 whitespace-nowrap flex items-center justify-center">
               <div className="">{item.id}</div>
             </td>
-            <td class="px-6 py-4 whitespace-nowrap">
-              <div class="flex items-center">
+            <td className="px-6 py-4 whitespace-nowrap">
+              <div className="flex items-center">
                 <div>
-                  <div class="text-sm font-medium text-gray-900">
+                  <div className="text-sm font-medium text-gray-900">
                     {item.name}
                   </div>
-                  <div class="text-sm text-gray-500">{item.description}</div>
+                  <div className="text-sm text-gray-500 hidden md:block">
+                    {item.description}
+                  </div>
                 </div>
               </div>
             </td>
-            <td class="px-6 py-4 whitespace-nowrap text-center text-md">
-              <span class="text-gray-600">{item.big}</span>
+            <td className="px-6 py-4 whitespace-nowrap text-center text-md">
+              <span className="text-gray-600">{item.big}</span>
             </td>
-            <td class="px-6 py-4 whitespace-nowrap text-md text-gray-600 text-center">
+            <td className="px-6 py-4 whitespace-nowrap text-md text-gray-600 text-center">
               {item.small}
             </td>
           </tr>
