@@ -10,8 +10,10 @@ module.exports = {
       fontFamily: {
         comforter: 'Comforter',
         praise: 'Praise',
-        'm-plus': "'M+PLUS+1'",
+        'm-plus': "'M PLUS 1'",
         josefin: 'Josefin Sans',
+        italianno: 'Italianno',
+        'roboto-s': "'Roboto Slab'",
       },
       fontSize: {
         '10xl': '10rem',

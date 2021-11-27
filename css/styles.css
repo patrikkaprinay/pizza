@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comforter&family=Jaldi:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Praise&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@200;300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -14,7 +16,8 @@ main {
   background-position: left;
 }
 
-#kontakt, 
-#cennik{
+#kontakt,
+#cennik,
+#hodiny {
   scroll-margin-top: 5em;
 }

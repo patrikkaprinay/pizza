@@ -101,47 +101,51 @@ const Info = () => {
   ]
 
   return (
-    <div className="py-14" id="hodiny">
+    <div className="py-14">
       <div className="grid grid-cols-1 md:grid-cols-2 w-4/5 md:w-full lg:w-3/5 mx-auto h-full">
-        <div
-          className="flex justify-center items-center flex-col my-8"
-        >
-          <h3 className="text-3xl">Otváracie hodiny</h3>
-          <div className="w-full mt-4">
+        <div className="flex items-center flex-col my-5 md:my-0" id="hodiny">
+          <h3 className="text-4xl md:text-3xl font-roboto-s font-medium text-center">
+            Otváracie hodiny
+          </h3>
+          <div className="w-full mt-4 text-xl md:text-base">
             {open.map((day) => (
-              <div className="grid grid-cols-4 w-2/3 mx-auto" key={day.id}>
-                <div className="col-span-2 font-semibold">{day.name}:</div>
+              <div className="grid grid-cols-4 sm:w-2/3 mx-auto" key={day.id}>
+                <div className="col-span-2 font-medium">{day.name}:</div>
                 <div className="col-span-2 text-right">
                   {day.from} - {day.until}
                 </div>
               </div>
             ))}
           </div>
-          <div className="mt-3 flex justify-center flex-col">
-            <p>Prijímame všetky typy gastro lístkov</p>
-            <Image src="/gastrolistky.jpg" height={55} width={195} />
-          </div>
         </div>
-        <div
-          className="flex justify-center items-center flex-col my-8"
-          id="cennik"
-        >
-          <h3 className="text-3xl">Cenník pre donášku</h3>
-          <div className="w-full mt-4">
+        <div className="flex items-center flex-col my-5 md:my-0" id="cennik">
+          <h3 className="text-4xl md:text-3xl font-roboto-s font-medium text-center">
+            Cenník pre donášku
+          </h3>
+          <div className="w-full mt-4 text-xl md:text-base">
             {cennik.map((village) => (
-              <div className="grid grid-cols-4 w-2/3 mx-auto" key={village.id}>
-                <div className="col-span-2 font-semibold">{village.name}:</div>
+              <div
+                className="grid grid-cols-4 sm:w-2/3 mx-auto"
+                key={village.id}
+              >
+                <div className="col-span-2 font-medium">{village.name}:</div>
                 <div className="col-span-2 text-right">{village.price}€</div>
               </div>
             ))}
           </div>
-          <div className="mt-3 text-gray-400">
-            {extra.map((extra) => (
-              <p className="text-center lg:text-left" key={extra.id}>
-                {extra.name}.
-              </p>
-            ))}
-          </div>
+        </div>
+      </div>
+      <div className="w-5/6 md:w-2/3 mx-auto mt-8">
+        <div className="mt-3 text-2xl md:text-xl text-gray-900">
+          {extra.map((extra) => (
+            <p className="text-center font-roboto-s font-medium" key={extra.id}>
+              {extra.name}.
+            </p>
+          ))}
+        </div>
+        <div className="mt-3 flex items-center justify-center flex-col md:w-2/5 mx-auto gap-2">
+          <p>Prijímame všetky typy gastro lístkov</p>
+          <Image src="/gastrolistky.jpg" height={55} width={195} />
         </div>
       </div>
     </div>
