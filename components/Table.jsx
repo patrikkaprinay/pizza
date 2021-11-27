@@ -17,7 +17,7 @@ const Table = (props) => {
   const [opened, setOpened] = useState([])
 
   return (
-    <table className="min-w-full divide-y divide-gray-200">
+      <table className="w-full lg:w-3/5 divide-y divide-gray-200">
       <thead className="bg-gray-50">
         <tr>
           {props.columns.map((col) => (
