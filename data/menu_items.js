@@ -257,6 +257,10 @@ export const drinks = [
   { id: 4, title: 'Toma Pomaranč džús', amount: '0,25', price: '0,70' },
   { id: 5, title: 'Pivo Zlatý Bažant', amount: '0,5', price: '1,40' },
   { id: 6, title: 'Nealko Radler', amount: '0,5', price: '1,40' },
+  { id: 7, title: 'Biele víno', amount: '0,7', price: '3,70' },
+  { id: 8, title: 'Červené víno', amount: '0,7', price: '3,40' },
+  { id: 9, title: 'Ružové víno', amount: '0,75', price: '4,40' },
+  { id: 10, title: 'Ovocné víno', amount: '0,7', price: '5,60' },
 ]
 
 export const drink_columns = [

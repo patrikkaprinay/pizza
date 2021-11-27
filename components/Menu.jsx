@@ -1,5 +1,6 @@
 import Table from './Table'
 import { meals, meal_columns, drinks, drink_columns } from '../data/menu_items'
+import { MdRestaurant } from 'react-icons/md'
 
 const Menu = () => {
   return (
@@ -9,7 +10,8 @@ const Menu = () => {
       style={{ minHeight: '100vh' }}
     >
       <div className="flex items-center justify-center flex-col">
-        <h2 className="font-roboto-s font-semibold text-6xl text-center sm:text-left mb-4">
+        <h2 className="font-roboto-s font-semibold text-6xl text-center sm:text-left mb-4 flex justify-center items-center flex-col">
+          <MdRestaurant className="w-6 h-6" />
           Menu
         </h2>
         <div className="px-4 text-center bg-yellow-200 py-6 mb-5 shadow-sm">
@@ -20,7 +22,7 @@ const Menu = () => {
           <p>biele, červené, ružové a ovocné víno.</p>
         </div>
         <Table items={meals} columns={meal_columns} />
-        <div className="px-4 text-center text-gray-500 mt-2">
+        <div className="px-4 text-center text-gray-500 mt-2 md:w-3/5 xl:w-2/5">
           <p className="text-sm">Zoznam alergénov:</p>
           <p className="text-xs">
             1 - obilniny obsahujúce lepok 2 - kôrovce 3 - vajcia 4 - ryby 5 -
