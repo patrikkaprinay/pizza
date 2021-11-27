@@ -17,14 +17,16 @@ const Table = (props) => {
   const [opened, setOpened] = useState([])
 
   return (
-      <table className="w-full lg:w-3/5 divide-y divide-gray-200">
+    <table className="w-full lg:w-4/5 divide-y divide-gray-200">
       <thead className="bg-gray-50">
         <tr>
           {props.columns.map((col) => (
             <th
               key={col.id}
               scope="col"
-              className={`px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider ${
+              className={`${
+                col.id == 3 || col.id == 4 ? 'px-1 sm:px-6' : 'px-6'
+              } py-3 text-sm font-medium text-gray-500 uppercase tracking-wider ${
                 col.center == false ? 'text-left' : 'text-center'
               } ${col.id == 1 ? 'xs:table-cell hidden' : ''}`}
             >
@@ -54,16 +56,19 @@ const Table = (props) => {
               <td className="px-6, py-4 whitespace-nowrap items-center justify-center hidden xs:flex">
                 <div className="">{item.id}</div>
               </td>
-              <td className="px-6 py-4 whitespace-nowrap">
+              <td className="pl-6 pr-3 sm:px-6 py-4 whitespace-nowrap">
                 <div className="flex items-center">
                   <div>
-                    <div className="text-sm font-medium text-gray-900 whitespace-pre-wrap">
-                      <p>
-                        <span className="font-light xs:hidden">
-                          {formatNumber(item.id) + '|'}
-                        </span>
-                        {item.title}
-                      </p>
+                    <div className="text-lg font-medium text-gray-900 whitespace-pre-wrap">
+                      <div className="flex flex-row">
+                        <p className="font-light xs:hidden">
+                          {formatNumber(item.id)}
+                        </p>
+                        <p style={{ textIndent: '-12px', paddingLeft: '12px' }}>
+                          <span className="font-light"> | </span>
+                          {item.title}
+                        </p>
+                      </div>
                     </div>
                     <div className="text-sm text-gray-500 hidden md:block">
                       {item.description}
@@ -71,10 +76,10 @@ const Table = (props) => {
                   </div>
                 </div>
               </td>
-              <td className="px-6 py-4 whitespace-nowrap text-center text-md">
+              <td className="px-2 sm:px-6 py-4 whitespace-nowrap text-center text-lg">
                 <span className="text-gray-600">{item.big}€</span>
               </td>
-              <td className="px-6 py-4 whitespace-nowrap text-md text-gray-600 text-center">
+              <td className="px-2 sm:px-6 py-4 whitespace-nowrap text-lg text-gray-600 text-center">
                 {item.small}€
               </td>
             </tr>

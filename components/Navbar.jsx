@@ -15,7 +15,11 @@ const Navbar = (props) => {
     >
       <div className="lg:container h-full sm:mx-auto flex justify-between items-center px-4">
         <div className="col-span-4 md:col-span-2 flex items-center text-4xl md:text-3xl">
-          <a href="#" className="flex flex-row">
+          <a
+            href="#"
+            className="flex flex-row"
+            onClick={() => setOpened(false)}
+          >
             <Logo start={true} />
           </a>
         </div>

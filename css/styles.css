@@ -14,10 +14,11 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
+  min-height: 90vh;
 }
 
 #kontakt,
 #cennik,
 #hodiny {
-  scroll-margin-top: 5em;
+  scroll-margin-top: 25vh;
 }

@@ -208,10 +208,10 @@ export const columns = [
   },
   {
     id: 3,
-    title: 'Veľká 450g',
+    title: 'Malá 350g',
   },
   {
     id: 4,
-    title: 'Malá 350g',
+    title: 'Veľká 450g',
   },
 ]
