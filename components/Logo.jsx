@@ -8,7 +8,7 @@ const Logo = (props) => {
       }`}
     >
       <IoMdPizza style={{ width: 27 }} />
-      Pizza Milano
+      Pizzéria Milano
     </p>
   )
 }

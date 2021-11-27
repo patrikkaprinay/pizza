@@ -11,9 +11,9 @@ const Welcome = () => {
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
           />
         </Head>
-        <div className="md:w-max py-12 md:px-24 flex justify-center items-center flex-col bg-gray-300 bg-opacity-90 rounded-lg mx-auto md:py-16">
+        <div className="md:w-max py-12 md:px-24 flex justify-center items-center flex-col bg-gray-300 bg-opacity-90 xs:rounded-lg mx-auto md:py-16">
           <h1 className="text-center font-praise text-7xl sm:text-8xl mb-5">
-            Pizza Milano
+            Pizzéria Milano
           </h1>
           <p className="text-xl md:text-2xl md:w-96 mx-auto text-center">
             Pizzeria Milano ponúka široký výber najlepšej talianskej pizze vo
