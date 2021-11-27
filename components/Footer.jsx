@@ -32,13 +32,13 @@ const Footer = () => {
                 className="hover:text-gray-500 transition duration-200"
                 href="#hodiny"
               >
-                Otváracie Hodiny
+                Otváracie hodiny
               </a>
               <a
                 className="hover:text-gray-500 transition duration-200"
                 href="#cennik"
               >
-                Cenník
+                      Cenník pre donášku
               </a>
             </div>
           </div>

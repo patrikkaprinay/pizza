@@ -118,7 +118,7 @@ const Info = () => {
             ))}
           </div>
           <div className="mt-3 flex justify-center flex-col">
-            <p>Prijimame vsetky typy gastro listkov</p>
+            <p>Prijímame všetky typy gastro lístkov</p>
             <Image src="/gastrolistky.jpg" height={55} width={195} />
           </div>
         </div>
