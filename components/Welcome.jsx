@@ -26,8 +26,8 @@ const Welcome = () => {
             Pizzéria Milano
           </h1>
           <p className="text-xl md:text-2xl md:w-96 mx-auto text-center">
-            Pizzeria Milano ponúka široký výber najlepšej talianskej pizze vo
-            Veľkých Úľanoch a rozvoz do blízkeho okolia.
+            Pizzeria Milano ponúka široký výber najlepšej talianskej pizze
+            <br /> vo Veľkých Úľanoch a rozvoz do blízkeho okolia.
           </p>
           <a
             href="#menu"

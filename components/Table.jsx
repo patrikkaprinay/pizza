@@ -55,7 +55,11 @@ const Table = (props) => {
                 item.description
                   ? 'hover:cursor-pointer hover:bg-gray-100 transition duration-150'
                   : ''
-              }${opened.includes(item.id) ? 'bg-gray-200 ' : ''}`}
+              }${
+                opened.includes(item.id) && item.description
+                  ? ' bg-gray-200 '
+                  : ''
+              }`}
             >
               <td className="px-4 py-4 whitespace-nowrap hidden xs:table-cell align-middle text-center">
                 <div>{item.id}</div>
