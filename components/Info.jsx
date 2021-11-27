@@ -92,11 +92,11 @@ const Info = () => {
   const extra = [
     {
       id: 1,
-      name: 'Pri objednávke 4 a viac pízz rozvoz zadarmo',
+      name: 'Pri objednávke 4 a viac pízz rozvoz ZADARMO',
     },
     {
       id: 2,
-      name: 'Pizza krabica a kečup zadarmo',
+      name: 'Pizza krabica a kečup ZADARMO',
     },
   ]
 
@@ -135,15 +135,17 @@ const Info = () => {
           </div>
         </div>
       </div>
-      <div className="w-5/6 md:w-2/3 mx-auto mt-8">
-        <div className="mt-3 text-2xl md:text-xl text-gray-900">
+      <div className="w-full lg:w-4/6 md:w-5/6 md:mx-auto md:rounded-md py-8 text-2xl md:text-xl bg-orange-700 text-white my-7 font-bold font-roboto-s">
+        <div className="w-5/6 md:w-2/3 mx-auto">
           {extra.map((extra) => (
-            <p className="text-center font-roboto-s font-medium" key={extra.id}>
+            <p className="text-center" key={extra.id}>
               {extra.name}.
             </p>
           ))}
         </div>
-        <div className="mt-3 flex items-center justify-center flex-col md:w-2/5 mx-auto gap-2">
+      </div>
+      <div className="flex items-center justify-center flex-col md:w-2/5 mx-auto gap-2">
+        <div className="w-5/6 md:w-2/3 mx-auto text-center">
           <p>Prijímame všetky typy gastro lístkov</p>
           <Image src="/gastrolistky.jpg" height={55} width={195} />
         </div>

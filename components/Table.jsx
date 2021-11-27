@@ -65,7 +65,7 @@ const Table = (props) => {
                           {formatNumber(item.id)}
                         </p>
                         <p style={{ textIndent: '-12px', paddingLeft: '12px' }}>
-                          <span className="font-light"> | </span>
+                          <span className="font-light xs:hidden"> | </span>
                           {item.title}
                         </p>
                       </div>

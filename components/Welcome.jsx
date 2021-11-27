@@ -21,8 +21,7 @@ const Welcome = () => {
           </p>
           <a
             href="#menu"
-            style={{ background: 'rgb(192 77 43)' }}
-            className="px-6 py-2 text-lg md:text-xl text-white bg-yellow-300 rounded-md shadow-sm mt-4"
+            className="px-6 py-2 text-lg md:text-xl text-gray-50 bg-orange-700 hover:bg-orange-800 rounded-md shadow-sm mt-4"
           >
             Menu
           </a>
