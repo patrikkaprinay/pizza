@@ -1,4 +1,5 @@
-import React from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
+import React, { useState } from 'react'
 
 const Table = (props) => {
   const formatNumber = (num) => {
@@ -33,9 +34,23 @@ const Table = (props) => {
         </tr>
       </thead>
       <tbody className="bg-white divide-y divide-gray-200">
-        {props.data.map((item) => (
+        {props.meals.map((item) => (
           <React.Fragment key={item.id}>
-            <tr key={item.id} onClick={() => {}}>
+            <tr
+              key={item.id}
+              onClick={() => {
+                if (opened.includes(item.id)) {
+                  setOpened((oldArray) => [
+                    ...oldArray.filter((id) => id != item.id),
+                  ])
+                } else {
+                  setOpened((oldArray) => [...oldArray, item.id])
+                }
+              }}
+              className={`hover:cursor-pointer hover:bg-gray-100 ${
+                opened.includes(item.id) ? 'bg-gray-200' : ''
+              } transition duration-150`}
+            >
               <td className="px-6, py-4 whitespace-nowrap items-center justify-center hidden xs:flex">
                 <div className="">{item.id}</div>
               </td>
@@ -48,7 +63,6 @@ const Table = (props) => {
                           {formatNumber(item.id) + '|'}
                         </span>
                         {item.title}
-                        <span className="font-normal"> {item.allergens}</span>
                       </p>
                     </div>
                     <div className="text-sm text-gray-500 hidden md:block">
@@ -64,17 +78,17 @@ const Table = (props) => {
                 {item.small}€
               </td>
             </tr>
-            <tr>
-              <td colSpan="4">
-                <div
-                  className={`h-full w-full bg-gray-50 px-6 ${
-                    opened.includes(item.id) ? '' : 'hidden'
-                  }`}
-                >
-                  a
-                </div>
-              </td>
-            </tr>
+            {opened.includes(item.id) && (
+              <tr className="overflow-hidden">
+                <td colSpan="4">
+                  <div className="h-full w-full bg-gray-50 px-6 py-2 text-gray-700 text-sm">
+                    {item.ingredients}
+
+                    {' ' + item.allergens}
+                  </div>
+                </td>
+              </tr>
+            )}
           </React.Fragment>
         ))}
       </tbody>

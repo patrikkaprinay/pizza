@@ -11,6 +11,7 @@ module.exports = {
         comforter: 'Comforter',
         praise: 'Praise',
         'm-plus': "'M+PLUS+1'",
+        josefin: 'Josefin Sans',
       },
       fontSize: {
         '10xl': '10rem',

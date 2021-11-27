@@ -2,8 +2,8 @@ import Logo from './Logo'
 
 const Footer = () => {
   return (
-    <div className="h-70 bg-gray-300 w-full flex justify-center items-center">
-      <div className="container mx-auto">
+    <div className="h-70 bg-gray-300 w-full flex justify-center items-center pb-1">
+      <div className="container mx-auto text-center">
         <div className="w-4/5 md:w-3/5 mx-auto grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-x sm:divide-y-0 divide-gray-500 py-4 sm:py-10">
           <div className="text-2xl py-8 flex justify-center items-center">
             <Logo />
@@ -43,7 +43,12 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <p className="text-center text-gray-400 pb-2">&copy; kpty</p>
+        <a
+          href="https://kpty.xyz"
+          className="text-gray-400 hover:text-gray-500 transition duration-300 font-josefin"
+        >
+          &copy; kpty
+        </a>
       </div>
     </div>
   )
