@@ -101,13 +101,12 @@ const Info = () => {
   ]
 
   return (
-    <div className="py-14">
+    <div className="py-14" id="hodiny">
       <div className="grid grid-cols-1 md:grid-cols-2 w-4/5 md:w-full lg:w-3/5 mx-auto h-full">
         <div
           className="flex justify-center items-center flex-col my-8"
-          id="hodiny"
         >
-          <h3 className="text-3xl">Otváracie Hodiny</h3>
+          <h3 className="text-3xl">Otváracie hodiny</h3>
           <div className="w-full mt-4">
             {open.map((day) => (
               <div className="grid grid-cols-4 w-2/3 mx-auto" key={day.id}>
@@ -127,7 +126,7 @@ const Info = () => {
           className="flex justify-center items-center flex-col my-8"
           id="cennik"
         >
-          <h3 className="text-3xl">Cenník</h3>
+          <h3 className="text-3xl">Cenník pre donášku</h3>
           <div className="w-full mt-4">
             {cennik.map((village) => (
               <div className="grid grid-cols-4 w-2/3 mx-auto" key={village.id}>

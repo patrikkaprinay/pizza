@@ -9,13 +9,13 @@ const Navbar = (props) => {
 
   return (
     <div
-      className={` ${opened ? 'pt-4 pb-2' : 'py-4'} fixed w-full bg-white ${
+      className={`py-4 fixed w-full bg-white ${
         props.scrolled || opened
           ? 'shadow-md'
           : ''
-      } transition duration-500`}
+      } transition duration-500 z-10`}
     >
-      <div className="md:container h-full sm:mx-auto flex justify-between items-center px-4">
+      <div className="lg:container h-full sm:mx-auto flex justify-between items-center px-4">
         <div className="col-span-4 md:col-span-2 flex items-center text-3xl">
           <a href="#" className="flex flex-row">
             <Logo start={true} />
@@ -37,7 +37,7 @@ const Navbar = (props) => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="overflow-hidden"
+            className="overflow-hidden md:hidden"
           >
             <NavItems hideNav={() => setOpened(false)} />
           </motion.div>
