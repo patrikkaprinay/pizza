@@ -50,8 +50,8 @@ const Table = (props) => {
                 }
               }}
               className={`hover:cursor-pointer hover:bg-gray-100 ${
-                opened.includes(item.id) ? 'bg-gray-200' : ''
-              } transition duration-150`}
+                opened.includes(item.id) ? 'bg-gray-200 ' : ''
+              }transition duration-150`}
             >
               <td className="px-6, py-4 whitespace-nowrap items-center justify-center hidden xs:flex">
                 <div className="">{item.id}</div>
@@ -85,6 +85,7 @@ const Table = (props) => {
             </tr>
             {opened.includes(item.id) && (
               <tr className="overflow-hidden">
+                <td className="hidden sm:table-cell"></td>
                 <td colSpan="4">
                   <div className="h-full w-full bg-gray-50 px-6 py-2 text-gray-700 text-sm">
                     {item.ingredients}
