@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 const Welcome = () => {
   return (
-    <main className="py-44">
+    <main className="">
       <div className="container mx-auto">
         <Head>
           <title>Pizzéria Milano — Veľké Úľany</title>
@@ -21,7 +21,7 @@ const Welcome = () => {
           />
           <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         </Head>
-        <div className="md:w-max py-12 md:px-24 flex justify-center items-center flex-col bg-gray-300 bg-opacity-90 xs:rounded-lg mx-auto md:py-16">
+        <div className="px-3 md:w-max py-12 md:px-24 flex justify-center items-center flex-col bg-gray-300 bg-opacity-90 xs:rounded-lg mx-auto md:py-16">
           <h1 className="text-center font-praise text-7xl sm:text-8xl mb-5">
             Pizzéria Milano
           </h1>
