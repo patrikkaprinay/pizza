@@ -36,27 +36,31 @@ const Table = (props) => {
         </tr>
       </thead>
       <tbody className="bg-white divide-y divide-gray-200">
-        {props.meals.map((item) => (
+        {props.items.map((item) => (
           <React.Fragment key={item.id}>
             <tr
               key={item.id}
               onClick={() => {
-                if (opened.includes(item.id)) {
-                  setOpened((oldArray) => [
-                    ...oldArray.filter((id) => id != item.id),
-                  ])
-                } else {
-                  setOpened((oldArray) => [...oldArray, item.id])
+                if (item.description) {
+                  if (opened.includes(item.id)) {
+                    setOpened((oldArray) => [
+                      ...oldArray.filter((id) => id != item.id),
+                    ])
+                  } else {
+                    setOpened((oldArray) => [...oldArray, item.id])
+                  }
                 }
               }}
-              className={`hover:cursor-pointer hover:bg-gray-100 ${
-                opened.includes(item.id) ? 'bg-gray-200 ' : ''
-              }transition duration-150`}
+              className={`${
+                item.description
+                  ? 'hover:cursor-pointer hover:bg-gray-100 transition duration-150'
+                  : ''
+              }${opened.includes(item.id) ? 'bg-gray-200 ' : ''}`}
             >
               <td className="px-4 py-4 whitespace-nowrap hidden xs:table-cell align-middle text-center">
                 <div>{item.id}</div>
               </td>
-              <td className="pl-6 pr-3 sm:px-6 py-4 whitespace-nowrap">
+              <td className="pl-3 pr-3 sm:px-6 py-4 whitespace-nowrap">
                 <div className="flex items-center">
                   <div>
                     <div className="text-lg font-medium text-gray-900 whitespace-pre-wrap">
@@ -70,27 +74,26 @@ const Table = (props) => {
                         </p>
                       </div>
                     </div>
-                    <div className="text-sm text-gray-500 hidden md:block">
-                      {item.description}
-                    </div>
                   </div>
                 </div>
               </td>
               <td className="px-2 sm:px-6 py-4 whitespace-nowrap text-center text-lg">
-                <span className="text-gray-600">{item.big}€</span>
+                <span className="text-gray-600">
+                  {item.big ? item.big + '€' : item.amount + 'l'}
+                </span>
               </td>
               <td className="px-2 sm:px-6 py-4 whitespace-nowrap text-lg text-gray-600 text-center">
-                {item.small}€
+                {item.small ? item.small : item.price}€
               </td>
             </tr>
-            {opened.includes(item.id) && (
+            {opened.includes(item.id) && item.description && (
               <tr className="overflow-hidden">
                 <td className="hidden sm:table-cell"></td>
                 <td colSpan="4">
                   <div className="h-full w-full bg-gray-50 px-6 py-2 text-gray-700 text-sm">
-                    {item.ingredients}
+                    {item.description?.ingredients}
 
-                    {' ' + item.allergens}
+                    {' ' + item.description?.allergens}
                   </div>
                 </td>
               </tr>
