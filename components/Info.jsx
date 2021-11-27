@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import { HiClock } from 'react-icons/hi'
+import { MdDeliveryDining } from 'react-icons/md'
 
 const Info = () => {
   const open = [
@@ -104,9 +106,12 @@ const Info = () => {
     <div className="py-14">
       <div className="grid grid-cols-1 md:grid-cols-2 w-4/5 md:w-full lg:w-3/5 mx-auto h-full">
         <div className="flex items-center flex-col my-5 md:my-0" id="hodiny">
-          <h3 className="text-4xl md:text-3xl font-roboto-s font-medium text-center">
-            Otváracie hodiny
-          </h3>
+          <div className="flex justify-center items-center flex-col gap-2 md:gap-0">
+            <HiClock className="w-6 h-6 my-1" />
+            <h3 className="text-4xl md:text-3xl font-roboto-s font-medium text-center">
+              Otváracie hodiny
+            </h3>
+          </div>
           <div className="w-full mt-4 text-xl md:text-base">
             {open.map((day) => (
               <div className="grid grid-cols-4 sm:w-2/3 mx-auto" key={day.id}>
@@ -119,9 +124,12 @@ const Info = () => {
           </div>
         </div>
         <div className="flex items-center flex-col my-5 md:my-0" id="cennik">
-          <h3 className="text-4xl md:text-3xl font-roboto-s font-medium text-center">
-            Cenník pre donášku
-          </h3>
+          <div className="flex justify-center items-center flex-col gap-2 md:gap-0">
+            <MdDeliveryDining className="w-8 h-8" />
+            <h3 className="text-4xl md:text-3xl font-roboto-s font-medium text-center">
+              Cenník pre donášku
+            </h3>
+          </div>
           <div className="w-full mt-4 text-xl md:text-base">
             {cennik.map((village) => (
               <div

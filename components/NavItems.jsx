@@ -1,7 +1,6 @@
 import { IoMdCall } from 'react-icons/io'
-import { MdRestaurant } from 'react-icons/md'
-import { HiClock } from "react-icons/hi"
-import { RiMoneyEuroCircleFill } from 'react-icons/ri'
+import { MdDeliveryDining, MdRestaurant } from 'react-icons/md'
+import { HiClock } from 'react-icons/hi'
 
 const NavItems = (props) => {
   return (
@@ -20,13 +19,13 @@ const NavItems = (props) => {
       </a>
       <a href="#hodiny" onClick={props.hideNav}>
         <p className="w-full flex justify-center items-center flex-row gap-2 py-4 md:py-0 hover:cursor-pointer text-md hover:text-gray-600 transition duration-200">
-            <HiClock />
-            Otvaracie Hodiny
+          <HiClock />
+          Otvaracie Hodiny
         </p>
       </a>
       <a href="#cennik" onClick={props.hideNav}>
         <p className="w-full flex justify-center items-center flex-row gap-2 py-4 md:py-0 hover:cursor-pointer text-md hover:text-gray-600 transition duration-200">
-          <RiMoneyEuroCircleFill />
+          <MdDeliveryDining />
           Cenník pre donášku
         </p>
       </a>
