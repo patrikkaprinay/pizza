@@ -92,8 +92,8 @@ const Table = (props) => {
             </tr>
             {opened.includes(item.id) && item.description && (
               <tr className="overflow-hidden">
-                <td className="hidden sm:table-cell"></td>
-                <td colSpan="4">
+                <td className="hidden sm:table-cell bg-gray-50 border-0 divide"></td>
+                <td colSpan="4" className="p-0">
                   <div className="h-full w-full bg-gray-50 px-6 py-2 text-gray-700 text-sm">
                     {item.description?.ingredients}
 
