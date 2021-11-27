@@ -11,7 +11,7 @@ const Contact = () => {
       <div className="flex items-center justify-center h-full flex-col gap-4 text-6xl font-m-plus">
         <h2 className="mb-4 font-semibold font-roboto-s">Kontakt</h2>
         <a
-          href={`tel:${number}`}
+          href={`tel${number}`}
           className="flex space-x-4 text-xl items-center text-gray-50 bg-orange-700 hover:bg-orange-800 px-4 py-2 rounded-md shadow-md transform\
            duration-300 font-regular font-sans"
         >

@@ -28,7 +28,7 @@ const Table = (props) => {
                 col.id == 3 || col.id == 4 ? 'px-1 sm:px-6' : 'px-6'
               } py-3 text-sm font-medium text-gray-500 uppercase tracking-wider ${
                 col.center == false ? 'text-left' : 'text-center'
-              } ${col.id == 1 ? 'xs:table-cell hidden' : ''}`}
+              } ${col.id == 1 ? 'xs:table-cell hidden px-2' : ''}`}
             >
               {col.title}
             </th>
@@ -53,8 +53,8 @@ const Table = (props) => {
                 opened.includes(item.id) ? 'bg-gray-200 ' : ''
               }transition duration-150`}
             >
-              <td className="px-6, py-4 whitespace-nowrap items-center justify-center hidden xs:flex">
-                <div className="">{item.id}</div>
+              <td className="px-4 py-4 whitespace-nowrap hidden xs:table-cell align-middle text-center">
+                <div>{item.id}</div>
               </td>
               <td className="pl-6 pr-3 sm:px-6 py-4 whitespace-nowrap">
                 <div className="flex items-center">
@@ -64,7 +64,7 @@ const Table = (props) => {
                         <p className="font-light xs:hidden">
                           {formatNumber(item.id)}
                         </p>
-                        <p style={{ textIndent: '-12px', paddingLeft: '12px' }}>
+                        <p className="indent-sm xs:indent-0 pl-4 xs:pl-0">
                           <span className="font-light xs:hidden"> | </span>
                           {item.title}
                         </p>

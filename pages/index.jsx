@@ -5,7 +5,7 @@ import Welcome from '../components/Welcome'
 
 export default function Home() {
   return (
-    <div className="overflow-y-scroll">
+    <div>
       <Welcome />
       <Menu />
       <Contact />
