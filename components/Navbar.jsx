@@ -9,10 +9,10 @@ const Navbar = (props) => {
 
   return (
     <div
-      className={` ${opened ? 'pt-4 pb-2' : 'py-4'} fixed w-full ${
+      className={` ${opened ? 'pt-4 pb-2' : 'py-4'} fixed w-full bg-white ${
         props.scrolled || opened
-          ? 'bg-white shadow-md'
-          : 'bg-gradient-to-b from-white to-transparent'
+          ? 'shadow-md'
+          : ''
       } transition duration-500`}
     >
       <div className="md:container h-full sm:mx-auto flex justify-between items-center px-4">
