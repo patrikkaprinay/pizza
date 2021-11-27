@@ -143,7 +143,7 @@ const Info = () => {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-4/6 md:w-5/6 md:mx-auto md:rounded-md py-8 text-2xl md:text-xl bg-orange-700 text-white my-7 font-bold font-roboto-s">
+      <div className="w-full lg:w-4/6 xl:w-3/6 md:w-5/6 md:mx-auto md:rounded-md py-8 text-2xl md:text-xl bg-orange-700 text-white my-7 font-bold font-roboto-s">
         <div className="w-5/6 md:w-2/3 mx-auto">
           {extra.map((extra) => (
             <p className="text-center" key={extra.id}>
