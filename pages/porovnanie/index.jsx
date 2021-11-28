@@ -18,7 +18,7 @@ const Comparison = () => {
             <p>
               Dobrý deň prajem, volám sa <b>Patrik Kaprinay</b> a som študentom
               informatiky na Slovenskej technickej univerzite v Bratislave. Vo
-              volnom čase som sa rozhodol vylepšit Vašu stránku.
+              voľnom čase som sa rozhodol vylepšit Vašu stránku.
             </p>
             <p>
               Nová stránka je už responzívna (prispôsobí sa podľa toho, či ju
