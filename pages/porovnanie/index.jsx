@@ -18,12 +18,12 @@ const Comparison = () => {
             <p>
               Dobrý deň prajem, volám sa <b>Patrik Kaprinay</b> a som študentom
               informatiky na Slovenskej technickej univerzite v Bratislave. Vo
-              voľnom čase som sa rozhodol vylepšit Vašu stránku.
+              voľnom čase som sa rozhodol vylepšiť Vašu stránku.
             </p>
             <p>
               Nová stránka je už responzívna (prispôsobí sa podľa toho, či ju
-              pozeraju na počítači alebo na mobile), bola vytvorena v prvom rade
-              na mobilne zobrazenie. Vypísanie pízz do tabuľky funguje
+              pozerajú na počítači alebo na mobile), bola vytvorená v prvom rade
+              na mobilné zobrazenie. Vypísanie pízz do tabuľky funguje
               automaticky, informácie o pizzach, ako je názov, alergény, cena
               atď., sú uložené v samostatnom súbore, preto sú dáta ľahko
               modifikateľné a udržateľné.
