@@ -20,7 +20,7 @@ const NavItems = (props) => {
       <a href="#hodiny" onClick={props.hideNav}>
         <p className="w-full flex justify-center items-center flex-row gap-2 py-4 md:py-0 hover:cursor-pointer text-md hover:text-gray-600 transition duration-200">
           <HiClock />
-          Otvaracie Hodiny
+          Otváracie hodiny
         </p>
       </a>
       <a href="#cennik" onClick={props.hideNav}>
