@@ -1,6 +1,7 @@
 import Table from './Table'
 import { meals, meal_columns, drinks, drink_columns } from '../data/menu_items'
 import { MdRestaurant } from 'react-icons/md'
+import { BsArrowRightShort } from 'react-icons/bs'
 
 const Menu = () => {
   return (
@@ -15,13 +16,24 @@ const Menu = () => {
             Menu
           </h2>
           <div className="px-4 text-center bg-yellow-200 py-6 mb-5 shadow-sm">
-            <p className="text-orange-500 uppercase text-lg font-bold">
+            <p className="text-orange-500 uppercase text-xl font-bold">
               Novinka
             </p>
             <p>
               Pri objednávke pízz si možete <br /> zakúpiť rôzne druhy vín:
             </p>
             <p>biele, červené, ružové a ovocné víno.</p>
+            <a
+              href=""
+              className="text-orange-500 underline flex justify-center items-center mt-3"
+              onClick={(e) => {
+                e.preventDefault()
+                document.querySelector('#napoje').scrollIntoView()
+              }}
+            >
+              Zobraziť nápojový lístok
+              <BsArrowRightShort />
+            </a>
           </div>
           <Table items={meals} columns={meal_columns} />
           <div className="px-4 text-center text-gray-500 mt-2 md:w-3/5 xl:w-2/5">
@@ -34,7 +46,10 @@ const Menu = () => {
             </p>
           </div>
         </div>
-        <div className="flex items-center justify-center flex-col mt-8">
+        <div
+          className="flex items-center justify-center flex-col mt-8"
+          id="napoje"
+        >
           <h2 className="font-roboto-s font-semibold text-4xl text-center sm:text-left mb-4">
             Nápojový lístok
           </h2>

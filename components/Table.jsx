@@ -1,4 +1,3 @@
-import { AnimatePresence, motion } from 'framer-motion'
 import React, { useState } from 'react'
 
 const Table = (props) => {
