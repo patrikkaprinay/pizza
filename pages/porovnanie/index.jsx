@@ -35,7 +35,7 @@ const Comparison = () => {
               </a>
               <p className="mt-8">
                 V prípade ak Vás takáto verzia stránky zaujala ponúkam Vám
-                spoluprácu. Kontaktovať ma môžete na tel. c. 0905 1213 456,
+                spoluprácu. Kontaktovať ma môžete na tel. c. 0918 844 643,
                 <br /> v case (10:00 - 12:00 17:00 - 19:00) alebo emailom:
               </p>
               <a
