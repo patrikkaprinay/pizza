@@ -23,9 +23,9 @@ const Comparison = () => {
             <p>
               Nová stránka je už responzívna (prispôsobí sa podľa toho, či ju
               pozeraju na počítači alebo na mobile), bola vytvorena v prvom rade
-              na mobilne zobrazenie. Vypísanie pízz do tabulky funguje
+              na mobilne zobrazenie. Vypísanie pízz do tabuľky funguje
               automaticky, informácie o pizzach, ako je názov, alergény, cena
-              atď., sú uložené v samostatnom súbore, preto sú dáta lahko
+              atď., sú uložené v samostatnom súbore, preto sú dáta ľahko
               modifikateľné a udržateľné.
             </p>
             <div className="my-12 w-3/5 mx-auto">
