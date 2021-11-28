@@ -22,8 +22,6 @@
 
 html {
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  overflow-y: scroll;
 }
 
 main {
@@ -41,7 +39,4 @@ main {
 #cennik,
 #hodiny {
   scroll-margin-top: 25vh;
-}
-
-#main {
 }
