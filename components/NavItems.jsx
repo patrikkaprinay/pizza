@@ -29,6 +29,19 @@ const NavItems = (props) => {
           Cenník pre donášku
         </p>
       </a>
+      <a
+        onClick={() => {
+          props.hideNav
+          document
+            .querySelector('#kontakt')
+            .scrollIntoView({ behavior: 'smooth' })
+        }}
+      >
+        <p className="w-full flex justify-center items-center flex-row gap-2 py-4 md:py-0 hover:cursor-pointer text-md hover:text-gray-600 transition duration-200">
+          <MdDeliveryDining />
+          Test
+        </p>
+      </a>
     </>
   )
 }
