@@ -47,7 +47,7 @@ const Menu = () => {
           </div>
         </div>
         <div
-          className="flex items-center justify-center flex-col mt-8"
+          className="flex items-center justify-center flex-col pt-32 -mt-20"
           id="napoje"
         >
           <h2 className="font-roboto-s font-semibold text-4xl text-center sm:text-left mb-4">
