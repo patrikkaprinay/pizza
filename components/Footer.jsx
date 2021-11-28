@@ -11,7 +11,7 @@ const Footer = () => {
               <p>Leninová 166/10</p>
               <p>Veľké Úľany, 925 22</p>
               <p>Reklamačná linka:</p>
-              <p>0904 270 546</p>
+              <p>09xx xxx xxx</p>
             </div>
           </div>
           <div className="flex justify-center items-center flex-col py-4 md:py-8 row-span-full sm:row-auto border-b border-gray-500">
