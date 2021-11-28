@@ -14,7 +14,7 @@ const Contact = () => {
           Kontakt
         </h2>
         <a
-          href={`tel${number}`}
+          href={`tel:${number}`}
           className="flex space-x-4 text-xl items-center text-gray-50 bg-orange-700 hover:bg-orange-800 px-4 py-2 rounded-md shadow-md transform\
            duration-300 font-regular font-sans"
         >
