@@ -2,8 +2,8 @@ import Head from 'next/head'
 
 const Welcome = () => {
   return (
-    <main className="">
-      <div className="container mx-auto">
+    <main>
+      <div className="container mx-auto mt-32">
         <Head>
           <title>Pizzéria Milano — Veľké Úľany</title>
           <meta
