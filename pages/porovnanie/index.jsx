@@ -13,7 +13,7 @@ const Comparison = () => {
           </h1>
         </div>
         <div className="flex justify-center items-center flex-col">
-          <div className="flex justify-center items-center flex-col w-4/5 text-center text-2xl text-gray-800 gap-4">
+          <div className="flex justify-center items-center flex-col px-2 md:w-4/5 text-center text-2xl text-gray-800 gap-4">
             <p>
               Dobrý deň prajem, volám sa <b>Patrik Kaprinay</b> a som študentom
               informatiky na Slovenskej technickej univerzite v Bratislave. Vo
