@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Head from 'next/head'
 
 const Comparison = () => {
@@ -7,7 +6,7 @@ const Comparison = () => {
       <Head>
         <title>Porovnanie</title>
       </Head>
-      <div className="bg-gray-100 w-5/6 rounded-lg py-10">
+      <div className="bg-gray-100 w-full md:w-5/6 rounded-lg py-10">
         <div className="text-center py-12">
           <h1 className="text-5xl font-bold uppercase text-gray-900">
             Nová stránka
