@@ -31,7 +31,7 @@ const Comparison = () => {
             <div className="my-12 w-3/5 mx-auto">
               <p className="text-4xl">Stránku môžete navštíviť na adrese:</p>
               <a href="/" className="text-blue-800 underline">
-                eager-brahmagupta-be83c7.netlify.app/
+                nova-pizzeria-milano.netlify.app/
               </a>
               <p className="mt-8">
                 V prípade ak Vás takáto verzia stránky zaujala ponúkam Vám
