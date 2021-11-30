@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { AnimatePresence, motion } from 'framer-motion'
 
 const Contact = () => {
-  const number = '0948 604 222'
+  const number = '09xx xxx xxx'
   const [QR, setQR] = useState(false)
   return (
     <div className="py-12 bg-gray-200" id="kontakt">
@@ -35,9 +35,9 @@ const Contact = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="p-2 bg-white rounded-md"
+              className="bg-white rounded-md"
             >
-              <Image src="/qr.png" height={100} width={100} />
+              <Image src="/number.png" priority height={100} width={100} />
             </motion.div>
           )}
         </AnimatePresence>
