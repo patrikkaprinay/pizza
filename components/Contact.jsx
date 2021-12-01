@@ -5,6 +5,9 @@ import { AnimatePresence, motion } from 'framer-motion'
 
 const Contact = () => {
   const number = '0900 000 000'
+  const formatNumber = (num) => {
+    return num.split(' ').join('')
+  }
   const [QR, setQR] = useState(false)
   return (
     <div className="py-12 bg-gray-200" id="kontakt">
@@ -19,7 +22,7 @@ const Contact = () => {
            duration-300 font-regular font-sans"
         >
           <IoMdCall className="mr-2" />
-          {number}
+          {formatNumber(number)}
         </a>
         <button
           onClick={() => setQR((before) => !before)}
