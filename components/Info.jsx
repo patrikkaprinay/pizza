@@ -56,8 +56,13 @@ const Info = () => {
       </div>
       <div className="flex items-center justify-center flex-col md:w-2/5 mx-auto gap-2">
         <div className="w-5/6 md:w-2/3 mx-auto text-center">
-          <p>Prijímame všetky typy gastro lístkov</p>
-          <Image src="/gastrolistky.jpg" height={55} width={195} />
+          <p>Prijímame všetky typy gastrolístkov</p>
+          <Image
+            src="/gastrolistky.jpg"
+            alt="Typy gastrolistkov"
+            height={55}
+            width={195}
+          />
         </div>
       </div>
     </div>
