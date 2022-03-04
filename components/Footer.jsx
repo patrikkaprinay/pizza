@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="text-4xl py-8 flex justify-center items-center flex-col">
             <Logo />
             <div className="text-lg mt-5 text-gray-500">
-              <p>Leninová 166/10</p>
+              <p>Hlavna 12345</p>
               <p>Veľké Úľany, 925 22</p>
               <p>Reklamačná linka:</p>
               <p>09xx xxx xxx</p>
